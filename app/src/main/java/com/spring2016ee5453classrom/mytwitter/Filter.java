@@ -15,7 +15,7 @@ public class Filter extends Activity {
     EditText filterEarliest;
     EditText filterLatest;
 
-    DatePicker filterDate;
+
 
     public String searchForName;
     public String searchForEarliest;
@@ -31,8 +31,8 @@ public class Filter extends Activity {
         filterName = (EditText) findViewById(R.id.etFilterName);
         filterEarliest = (EditText) findViewById(R.id.etFilterEarliest);
         filterLatest = (EditText) findViewById(R.id.etFilterLatest);
-        filterDate = (DatePicker) findViewById(R.id.datePicker);
-        filterDate.setCalendarViewShown(false);
+
+
 
 
         OnClickListener buttonListener = new OnClickListener() {

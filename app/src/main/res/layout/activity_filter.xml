@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/etFilterName"
             android:layout_weight="1"
-            android:text="AJ" />
+            android:hint="username"/>
     </LinearLayout>
 
     <LinearLayout
@@ -40,13 +40,19 @@
             android:layout_height="wrap_content"
             android:text="Earliest Tweet Time:"
             android:id="@+id/tvFilterEarliest"
+            android:inputType="date"
+            android:ems="10"
             android:layout_weight="1" />
+
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/etFilterEarliest"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="Coming Soon!"
+            android:editable="false"
+            android:textAppearance="@style/TextAppearance.Design.Hint"/>
 
     </LinearLayout>
 
@@ -66,7 +72,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/etFilterLatest"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="Coming Soon!"
+            android:editable="false"
+            android:textAppearance="@style/TextAppearance.Design.Hint"/>
     </LinearLayout>
 
     <Button
@@ -75,11 +84,5 @@
         android:text="Search"
         android:id="@+id/butFilterSearch"
         android:layout_gravity="center_horizontal" />
-
-    <DatePicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/datePicker"
-        android:calendarViewShown="false" />
 
 </LinearLayout>
